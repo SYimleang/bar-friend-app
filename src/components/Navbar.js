@@ -2,15 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Stack, useMediaQuery, colors, TextField, IconButton, Menu, MenuItem, InputAdornment } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
-
-import Logo from '../assets/logo.svg';
 import LogoName from '../assets/logoName.svg';
 
 const Navbar = () => {
-  const isLargeScreen = useMediaQuery('(min-width: 1200px)');// Fix?
+  const isLargeScreen = useMediaQuery('(min-width: 1200px)');
   const [menuAnchor, setMenuAnchor] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
 
   // Menu functions
   const handleMenuClick = (e) => {
@@ -18,16 +14,6 @@ const Navbar = () => {
   };
   const handleMenuClose = () => {
     setMenuAnchor(null);
-  };
-
-  // Search functions
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
-  const handleSearchSubmit = (event) => {
-    event.preventDefault();
-    // Add your search logic here, e.g., navigate to search results page
-    console.log('Search query submitted:', searchQuery);
   };
 
   return (
