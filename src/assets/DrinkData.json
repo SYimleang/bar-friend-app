@@ -1,0 +1,39 @@
+[
+    {
+        "name": "7&7",
+        "spiritType": "Whisky",
+        "baseSpirit": "Seagram's 7 Whisky",
+        "flavoring agents": "",
+        "ingredients": "",
+        "mixer": "7-Up Soda",
+        "glassType": "Highball glass",
+        "description": "Add ice. Add 1.5oz Seagram's 7 and top with 7-Up to the glass"
+    },
+    {
+        "name": "Acapulco",
+        "spiritType": "Rum",
+        "baseSpirit": "White Rum",
+        "flavoring agents": "Triple Sec, Egg White, Lime Juice, Simple Syrup",
+        "mixer": "",
+        "glassType": "Rock glass",
+        "description": "Fill a shaker with ice. Add 1.5oz white rum, 0.5oz triple sec, 1 egg white, 0.5oz lime juice, and 0.5oz simple syrup to the shaker. Shake and Strain the drink into a glass filled with ice. Garnish with a lemon wedge."
+    },
+    {
+        "name": "Alabama Slammer",
+        "spiritType": "Whisky, Vodka, Gin, Amaretto",
+        "baseSpirit": "Southern Comfort, Amaretto, Vodka, Sloe Gin",
+        "flavoring agents": "Orange Juice",
+        "mixer": "",
+        "glassType": "Any",
+        "description": "Fill a shaker with ice. Add 0.5oz Southern Comfort, 0.5oz amaretto, 0.5oz vodka, 0.5oz sloe gin, and 4oz orange juice to the shaker. Shake and Strain the drink into a glass filled with ice."
+    },
+    {
+        "name": "Amaretto Sour",
+        "spiritType": "Amaretto",
+        "baseSpirit": "Amaretto",
+        "flavoring agents": "Lemon Juice, Simple Syrup, Egg White, Angostura bitter",
+        "mixer": "",
+        "glassType": "Rock glass",
+        "description": "Fill a glass with ice. Add the 1.5oz amaretto, 1.5oz lemon juice, 0.5oz simple syrup, 0.5 egg white and 4 dashes of bitters to a shaker. Dry shake and pour the drink into the glass and garnish with an orange."
+    }
+]
