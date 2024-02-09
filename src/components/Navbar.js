@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link, useHref } from 'react-router-dom';
-import { Stack, useMediaQuery, colors, TextField, IconButton, Menu, MenuItem, InputAdornment } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { Stack, useMediaQuery, IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 
@@ -21,16 +21,6 @@ const Navbar = () => {
   const handleMenuClose = () => {
     setMenuAnchor(null);
   };
-
-  // Search functions
-  const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
-  };
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    // Add your search logic here, e.g., navigate to search results page
-    console.log('Search query submitted:', searchQuery);
-  };
   const handleSearchIconClick = () => {
     setshowSearchBox(true);
   }
@@ -44,7 +34,7 @@ const Navbar = () => {
       justifyContent:'none',
       backgroundColor: '#000000',
       color: '#ababab'
-    }} px="20px"
+    }}
     width="100%"
     >
       {isLargeScreen ? (
@@ -105,6 +95,16 @@ const Navbar = () => {
           <Link to="/" style={{ margin: '0 auto'}}>      
             <img src={ LogoName } alt="logo" style={{ width: '180px', height: '48px', margin: '0 20px'}} />      
           </Link>
+          {showSearchBox ? (
+            <SearchBar placeholder="Enter a name..." data={DrinksData} />
+          ) : (
+            <IconButton
+              color="inherit"
+              onClick={handleSearchIconClick}
+              >
+                <SearchIcon />
+              </IconButton>
+          )}
           </>
         )}
         
